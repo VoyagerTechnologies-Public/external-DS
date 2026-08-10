@@ -24,6 +24,7 @@ set(APP_TABLE_FILES
   fsw/tables/ds_file_tbl.c
 )
 
+include_directories(${APPLICATION_PLATFORM_INC_LIST})
 add_cfe_tables(ds ${APP_TABLE_FILES})
 
 # If UT is enabled, then add the tests from the subdirectory
